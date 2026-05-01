@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scottish Terrier Club of Southern California</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <img src="header.png" alt="Scottish Terrier Club Header">
+</header>
+
+<!-- NAVIGATION -->
+<nav class="nav-bar">
+
+  <!-- HAMBURGER -->
+  <div class="menu-toggle" id="menu-toggle">
+    ☰
+  </div>
+
+  <ul class="menu" id="menu">
+
+    <li><a href="index.html">HOME</a></li>
+
+    <li class="dropdown">
+      <a href="#">ANNOUNCEMENTS</a>
+      <ul class="dropdown-menu">
+        <li><a href="events.html">Events</a></li>
+        <li><a href="news.html">Club News</a></li>
+      </ul>
+    </li>
+
+    <li><a href="officers.html">OFFICERS & DIRECTORS</a></li>
+
+    <li><a href="whatwedo.html">WHAT WE DO</a></li>
+
+    <li class="dropdown">
+      <a href="#">ABOUT THE SCOTTIE</a>
+      <ul class="dropdown-menu">
+        <li><a href="about.html">Breed Info</a></li>
+        <li><a href="standard.html">Breed Standard</a></li>
+      </ul>
+    </li>
+
+    <li><a href="history.html">HISTORY & PICTURES</a></li>
+
+    <li><a href="bulletin.html">THE BULLETIN</a></li>
+
+    <li><a href="rescue.html">SCOTTIE RESCUE</a></li>
+
+    <li><a href="housekeeping.html">HOUSEKEEPING</a></li>
+
+    <li><a href="links.html">LINKS</a></li>
+
+    <li><a href="admin.html">ADMIN</a></li>
+
+  </ul>
+</nav>
+
+<!-- HERO IMAGE -->
+<section class="hero">
+  <img src="dog.png" alt="Scottish Terrier">
+</section>
+
+<!-- CONTENT -->
+<section class="content">
+  <h2>Welcome</h2>
+  <p>
+    Welcome to the Scottish Terrier Club of Southern California. 
+    We are dedicated to promoting, protecting, and preserving the Scottish Terrier.
+  </p>
+</section>
+
+<!-- JAVASCRIPT -->
+<script>
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
+
+// dropdown click for mobile
+document.querySelectorAll('.dropdown > a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    if (window.innerWidth <= 900) {
+      e.preventDefault();
+      this.parentElement.classList.toggle('active');
+    }
+  });
+});
+</script>
+
+</body>
+</html>

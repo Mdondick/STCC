@@ -1,0 +1,73 @@
+Events.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="header">
+  <img src="header.png" alt="Scottish Terrier Club Header">
+</header>
+
+<nav class="nav-bar">
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <ul class="menu" id="menu">
+    <li><a href="index.html">HOME</a></li>
+    <li class="dropdown">
+      <a href="#">ANNOUNCEMENTS</a>
+      <ul class="dropdown-menu">
+        <li><a href="events.html">Events</a></li>
+        <li><a href="news.html">Club News</a></li>
+      </ul>
+    </li>
+    <li><a href="officers.html">OFFICERS & DIRECTORS</a></li>
+    <li><a href="whatwedo.html">WHAT WE DO</a></li>
+    <li><a href="history.html">HISTORY & PICTURES</a></li>
+  </ul>
+</nav>
+
+<section class="content">
+  <h1>Upcoming Events</h1>
+
+  <div class="event">
+    <h3>Scottie Meetup</h3>
+    <p><strong>Date:</strong> June 15</p>
+    <p><strong>Location:</strong> Los Angeles</p>
+    <p>Join fellow Scottie owners for a fun meetup and social.</p>
+  </div>
+
+  <div class="event">
+    <h3>Annual Dog Show</h3>
+    <p><strong>Date:</strong> July 10</p>
+    <p><strong>Location:</strong> Pasadena</p>
+    <p>Competition and exhibition featuring top Scottish Terriers.</p>
+  </div>
+
+</section>
+
+<script>
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
+
+document.querySelectorAll('.dropdown > a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    if (window.innerWidth <= 900) {
+      e.preventDefault();
+      this.parentElement.classList.toggle('active');
+    }
+  });
+});
+</script>
+
+</body>
+</html>

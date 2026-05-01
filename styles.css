@@ -1,0 +1,147 @@
+/* RESET */
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f4efe6;
+}
+
+/* HEADER */
+.header img {
+  width: 100%;
+  display: block;
+}
+
+/* NAV BAR */
+/* NAV BAR */
+.nav-bar {
+  background: linear-gradient(to bottom, #1f5c2e, #0f3d1d);
+  border-top: 2px solid #b08a3c;
+  border-bottom: 2px solid #b08a3c;
+  overflow: hidden; /* prevents spill */
+}
+
+/* MENU */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;           /* 🔥 FORCE one line */
+  white-space: nowrap;         /* 🔥 prevent wrapping */
+}
+
+/* ITEMS */
+.menu li {
+  position: relative;
+}
+
+/* LINKS */
+.menu a {
+  display: block;
+  padding: 8px 10px;           /* 🔥 tighter spacing */
+  color: white;
+  text-decoration: none;
+  font-size: 12px;             /* 🔥 slightly smaller */
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+
+/* HOVER */
+.menu a:hover {
+  background: #2e7a45;
+}
+/* DROPDOWN MENU */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #1f5c2e;
+  min-width: 180px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #b08a3c;
+  z-index: 1000;
+}
+
+/* DROPDOWN LINKS */
+.dropdown-menu li a {
+  padding: 10px;
+  font-size: 12px;
+}
+
+/* SHOW DROPDOWN ON HOVER */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* HERO IMAGE */
+.hero img {
+  width: 100%;
+  display: block;
+}
+
+/* CONTENT */
+.content {
+  background: #ddd;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* CONTENT TEXT */
+.content p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* PAGE TITLE */
+.content h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* GRID LAYOUT */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* EVENTS */
+.event {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 6px;
+}
