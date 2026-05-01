@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scottie Rescue</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Scottie Rescue</h1>
+</header>
+
+<main>
+  <p>Information about Scottish Terrier rescue efforts, adoption, and support will be added here.</p>
+</main>
+
+<footer>
+  <p>&copy; 2024 Scottish Terrier Club of Southern California</p>
+</footer>
+
+</body>
+</html>
